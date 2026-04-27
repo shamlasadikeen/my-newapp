@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background:
+    radial-gradient(circle at top left, rgba(255, 221, 0, 0.08), transparent 18%),
+    radial-gradient(circle at bottom right, rgba(255, 221, 0, 0.07), transparent 20%),
+    #030303;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 215, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 215, 0, 0.03) 1px, transparent 1px);
+  background-size: 80px 80px;
+  opacity: 0.15;
+}
+
+@keyframes floatY {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes floatYSoft {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes rotateSlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateReverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.floating-robot2 {
+  animation: floatY 4s ease-in-out infinite;
+}
+
+.floating-badge {
+  animation: floatYSoft 3.2s ease-in-out infinite;
+}
+
+.floating-badge-delayed {
+  animation: floatYSoft 3.8s ease-in-out infinite;
+  animation-delay: 0.8s;
+}
+
+.floating-icon {
+  animation: floatYSoft 3s ease-in-out infinite;
+}
+
+.floating-icon-delayed {
+  animation: floatYSoft 3.6s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.floating-icon-slow {
+  animation: floatYSoft 4.2s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.rotating-ring {
+  animation: rotateSlow 16s linear infinite;
+}
+
+.rotating-ring-reverse {
+  animation: rotateReverse 12s linear infinite;
+}
+
+.rotating-ring-slow {
+  animation: rotateSlow 22s linear infinite;
+}
+
+.perspective {
+  perspective: 800px;
+}
+
+.robot-inner {
+  transition: transform 0.2s ease;
+  transform-style: preserve-3d;
+}
+
+.perspective {
+  perspective: 1200px;
+}
+
+.robot-inner {
+  transition: transform 0.25s ease, filter 0.25s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.perspective {
+  perspective: 1200px;
+}
+
+.robot-inner {
+  transition: transform 0.18s ease-out;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
