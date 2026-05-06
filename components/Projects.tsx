@@ -1,32 +1,64 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
 
 const projects = [
-  { title: "Modern Dashboard", image: "/images/dashboard.jpg" },
-  { title: "Portfolio Website", image: "/images/portfolioweb.jpg" },
-  { title: "Product Landing Page", image: "/images/landing page.jpg" },
-  { title: "Creative UI Concept", image: "/images/ui.png" },
-  { title: "SaaS Interface", image: "/images/SaaS dashboard.jpg" },
-  { title: "Admin Panel UI", image: "/images/dashboard.jpg" },
+  {
+    title: "Modern Dashboard",
+    image: "/images/dashboard.jpg",
+    link: "https://modern-dashboard-ui-g7un.vercel.app/",
+    description:
+      "A futuristic dashboard UI with cards, charts, and modern layout structure designed for admin and analytics platforms.",
+  },
+  {
+   title: "Portfolio Website",
+    image: "/images/portfolioweb.jpg",
+    link: "https://my-portfolio-jet-nu-39.vercel.app/",
+    description:
+      "A modern personal portfolio built with Next.js, TypeScript, and Tailwind CSS to showcase skills, projects, and contact details.",
+  },
+  {
+      title: "Luxury Car Landing Page",
+      image: "/images/landing page.jpg",
+      link: "https://my-landing-page1-phi.vercel.app/",
+      description:
+      "A premium automotive landing page featuring modern UI design, smooth animations, responsive layouts, and a luxury-focused user experience built for showcasing high-end vehicles.",
+  },
+  {
+     title: "Organic Market UI",
+    image: "/images/ui.png",
+    link: "https://organic-market-ui.vercel.app/",
+    description:
+      "A modern organic grocery marketplace UI featuring clean layouts, fresh product showcases, responsive design, and a smooth shopping experience focused on healthy lifestyle branding.",
+  },
+  {
+    title: "SaaS Interface",
+    image: "/images/SaaS dashboard.jpg",
+    link: "#",
+    description:
+      "A futuristic dashboard UI with cards, charts, and modern layout structure designed for admin and analytics platforms.",
+  },
+    {
+    title: "Modern Dashboard",
+    image: "/images/dashboard.jpg",
+    link: "https://modern-dashboard-ui-g7un.vercel.app/",
+    description:
+      "A futuristic dashboard UI with cards, charts, and modern layout structure designed for admin and analytics platforms.",
+  },
+
 ];
 
 export default function Projects() {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
-
   return (
     <section id="projects" className="px-6 py-16 md:px-10">
       <div className="mx-auto max-w-[1280px]">
-        {/* Header */}
-        <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          <div>
-            <h2 className="text-4xl font-bold text-white">My Products</h2>
-            <p className="mt-2 text-gray-400">All history</p>
-          </div>
+        <div className="mb-10">
+          <h2 className="text-4xl font-bold text-white">My Projects</h2>
+          <p className="mt-2 text-gray-400">
+            Featured websites and development work
+          </p>
         </div>
 
-        {/* Grid */}
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {projects.map((project, index) => (
             <div
@@ -53,50 +85,23 @@ export default function Projects() {
                   {project.title}
                 </h3>
 
-                <p className="mt-3 text-sm leading-7 text-gray-400">
-                  Futuristic dark UI design with clean layout and modern interaction.
+                <p className="mt-3 min-h-[84px] text-sm leading-7 text-gray-400">
+                  {project.description}
                 </p>
 
-                <button
-                  onClick={() => setSelectedImage(project.image)}
-                  className="mt-5 rounded-full border border-yellow-400/30 px-5 py-2 text-sm text-yellow-400 transition hover:bg-yellow-400 hover:text-black"
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 inline-block rounded-full border border-yellow-400/30 px-5 py-2 text-sm text-yellow-400 transition hover:bg-yellow-400 hover:text-black"
                 >
                   View Project
-                </button>
+                </a>
               </div>
             </div>
           ))}
         </div>
       </div>
-
-      {/* 🔥 IMAGE MODAL */}
-      {selectedImage && (
-        <div
-          onClick={() => setSelectedImage(null)}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
-        >
-          <div
-            className="relative w-full max-w-5xl"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <Image
-              src={selectedImage}
-              alt="Full view"
-              width={1200}
-              height={800}
-              className="h-auto w-full rounded-xl object-contain"
-            />
-
-            {/* Close Button */}
-            <button
-              onClick={() => setSelectedImage(null)}
-              className="absolute -right-3 -top-3 flex h-10 w-10 items-center justify-center rounded-full bg-white text-black"
-            >
-              ✕
-            </button>
-          </div>
-        </div>
-      )}
     </section>
   );
 }
