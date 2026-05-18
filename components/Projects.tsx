@@ -25,11 +25,11 @@ const projects = [
       "A premium automotive landing page featuring modern UI design, smooth animations, responsive layouts, and a luxury-focused user experience built for showcasing high-end vehicles.",
   },
   {
-     title: "Organic Market UI",
-    image: "/images/ui.png",
-    link: "https://organic-market-ui.vercel.app/",
+     title: "Burger App UI",
+    image: "/images/burger ui.jpg",
+    link: "https://www.figma.com/proto/2vmy24p7hRuN04qrEgpg0Z/burger-app?node-id=0-1&t=ZTXOzuRsdKM0wxOn-1",
     description:
-      "A modern organic grocery marketplace UI featuring clean layouts, fresh product showcases, responsive design, and a smooth shopping experience focused on healthy lifestyle branding.",
+      "A modern and visually engaging burger ordering app prototype designed with a clean UI, smooth navigation, and an appetizing food presentation experience. Built to deliver a fast, user-friendly mobile ordering journey with stylish layouts and interactive design elements.",
   },
   {
     title: "SaaS Interface",
