@@ -9,14 +9,12 @@ export default function About() {
             </div>
             <div>
               <h2 className="text-3xl font-bold">Shamla</h2>
-              <p className="text-gray-400">Developer Full Stack</p>
+              <p className="text-gray-400">FRONTEND DEVELOPER | UI UX DESIGNER</p>
             </div>
           </div>
 
           <p className="mt-6 leading-7 text-gray-400">
-            I am a full stack developer focused on creating premium interfaces
-            and smooth user experiences. I enjoy building dark-themed modern
-            websites with strong visuals, clean code, and scalable structure.
+            I am a Frontend Developer and UI/UX Designer focused on creating premium interfaces and smooth user experiences. I enjoy designing and developing modern websites with strong visuals, clean responsive layouts, interactive prototypes in Figma, and scalable front-end architecture.
           </p>
         </div>
 

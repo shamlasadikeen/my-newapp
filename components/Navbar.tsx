@@ -10,7 +10,7 @@ export default function Navbar() {
           </div>
           <div>
             <h1 className="text-[18px] font-semibold leading-none">Shamla</h1>
-            <p className="mt-1 text-sm text-gray-400">Web Developer Portfolio</p>
+            <p className="mt-1 text-sm text-gray-400">FRONTEND DEVELOPER | UI UX DESIGNER</p>
           </div>
         </div>
 

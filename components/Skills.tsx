@@ -22,7 +22,7 @@ export default function Skills() {
             </div>
             <div>
               <h2 className="text-3xl font-bold">Shamla</h2>
-              <p className="mt-1 text-gray-400">Developer Full Stack</p>
+              <p className="mt-1 text-gray-400">FRONTEND DEVELOPER | UI UX DESIGNER</p>
             </div>
           </div>
 

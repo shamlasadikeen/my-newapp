@@ -46,17 +46,16 @@ export default function Hero() {
       <div className="mx-auto grid max-w-[1280px] items-center gap-12 lg:grid-cols-2">
         <div className="max-w-[620px]">
           <p className="mb-8 text-sm font-semibold uppercase tracking-[0.35em] text-yellow-400">
-            Web Developer
+            FRONTEND DEVELOPER | UI UX DESIGNER
           </p>
 
           <h1 className="text-5xl font-extrabold leading-[0.95] sm:text-6xl lg:text-8xl">
-            <span className="block text-white">Full Stack</span>
+            <span className="block text-white">Frontend</span>
             <span className="mt-4 block text-yellow-400">Developer</span>
           </h1>
 
           <p className="mt-10 max-w-[620px] text-lg leading-8 text-gray-400">
-            I design and develop modern, fast, and visually powerful web
-            experiences using React, Next.js, TypeScript, and Tailwind CSS.
+          I design and develop modern, fast, and visually powerful web experiences using React, Next.js, TypeScript, and Tailwind CSS, while also crafting intuitive UI/UX designs and interactive prototypes in Figma.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
@@ -130,7 +129,7 @@ export default function Hero() {
               </div>
 
               <h3 className="text-3xl font-bold text-white">Shamla</h3>
-              <p className="mt-2 text-gray-400">Full Stack Developer</p>
+              <p className="mt-2 text-gray-400">FRONTEND DEVELOPER | UI UX DESIGNER</p>
             </div>
           </div>
         </div>
